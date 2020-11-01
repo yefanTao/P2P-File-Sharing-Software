@@ -81,7 +81,7 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    PeerProcess peerPs = readConfig(Integer.parseInt(args[0]));
+    PeerProcess peerPs = readConfig();
     peerPs.startListener();
     peerPs.run();
     peerPs.printInfo();
